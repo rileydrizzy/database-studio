@@ -1,0 +1,1 @@
+CREATE DATABASE pau_practice_db;

@@ -1,0 +1,26 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Environment / config
+.env
+*.ini
+*.cfg
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+*.bak
+*.sql~  # temp or backup SQL
+
+# IDE
+.vscode/
+.idea/
+*.suo
+*.user
+*.dbmdl
+*.cache
