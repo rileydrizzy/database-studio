@@ -2,6 +2,8 @@ sudo systemctl start postgresql
 
 sudo systemctl enable postgresql
 
+sudo systemctl restart postgresqlv
+
 sudo -i -u postgres #log in as postgres user
 psql
 
@@ -10,8 +12,13 @@ $EDITOR $PGDATA/pg_hba.conf
 
 sudo apt install nano
 
+
+
+local univer lucas rileydrizzy reject
+local univer teachers samehost reject 
+
 sudo cat /etc/postgresql/15/main/pg_hba.conf
-sudo nano /etc/postgresql/15/main/pg_hba.conf
+sudo nano /etc/postgresql/16/main/pg_hba.conf
 
 
-'/teamspace/studios/this_studio/
+'/teamspace/studios/this_studio/database-studio/
