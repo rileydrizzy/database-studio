@@ -2,22 +2,16 @@ sudo systemctl start postgresql
 
 sudo systemctl enable postgresql
 
-sudo systemctl restart postgresqlv
+sudo systemctl restart postgresql
 
-sudo -i -u postgres #log in as postgres user
-psql
-
-
-$EDITOR $PGDATA/pg_hba.conf
+sudo -i -u postgres
 
 sudo apt install nano
-
-
 
 local univer lucas rileydrizzy reject
 local univer teachers samehost reject 
 
-sudo cat /etc/postgresql/15/main/pg_hba.conf
+sudo cat /etc/postgresql/16/main/pg_hba.conf
 sudo nano /etc/postgresql/16/main/pg_hba.conf
 
 

@@ -1,1 +1,2 @@
-CREATE DATABASE pau_practice_db;
+CREATE DATABASE practice_db;
+CREATE DATABASE university_db;
