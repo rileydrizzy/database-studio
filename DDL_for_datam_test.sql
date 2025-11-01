@@ -74,3 +74,13 @@ create table if not exists takes(
 	foreign key (course_id, sec_id, semester, year) references section on delete cascade,
 	foreign key (ID) references student on delete cascade
 );
+
+
+create table if not exists Prerequisites(
+	CourseCode varchar(8),
+	PreqID varchar(8),
+	primary key (CourseCode, PreqID),
+	foreign key (CourseCode) references course,
+	foreign key (PreqID) references course
+)
+
