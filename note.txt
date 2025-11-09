@@ -14,5 +14,26 @@ local univer teachers samehost reject
 sudo cat /etc/postgresql/16/main/pg_hba.conf
 sudo nano /etc/postgresql/16/main/pg_hba.conf
 
+insert_tables_datam_test.sql
+DDL_for_universitydb.sql
+`
 
 '/teamspace/studios/this_studio/database-studio/
+
+
+ BIO-101    | Intro. to Biology          |       4 | Biology
+ BIO-301    | Genetics                   |       4 | Biology
+ BIO-399    | Computational Biology      |       3 | Biology
+ CS-101     | Intro. to Computer Science |       4 | Comp. Sci.
+ CS-190     | Game Design                |       4 | Comp. Sci.
+ CS-315     | Robotics                   |       3 | Comp. Sci.
+ CS-319     | Image Processing           |       3 | Comp. Sci.
+ CS-347     | Database Concepts          |       3 | Comp. Sci.
+ EE-181     | Intro. to Digital Systems  |       3 | Elec. Eng.
+ FIN-201    | Investment Banking         |       3 | Finance
+ HIS-351    | World History              |       3 | History
+ MU-199     | Music Video Production     |       3 | Music
+ PHY-101    | Physical Principles        |       4 | Physics
+
+
+ PHY-402: Statistical Mechanics
