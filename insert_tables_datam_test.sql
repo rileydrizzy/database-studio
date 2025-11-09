@@ -131,20 +131,22 @@ insert into takes(studentid, coursecode, sectionid, semester, year, grade) value
 -- Assignment Part 4: Screenshot your table contents (for all ten tables) (2 marks).
 
 
--- DAT 605 assignmentINSERT INTO prerequisites(coursecode, preqid) VALUES ('BIO-301','BIO-101');
+-- DAT 605 Assignment 1
 
--- TODO create data science dept
+-- Adding the Data Science department
+INSERT INTO department(deptname, building, budget) values ('Data Science', 'Watson', 1500000);
 
-INSERT INTO department(deptname, building, budget) values ('Data Science', 'Watson', 90000);
-
+-- Adding courses
 INSERT INTO course(coursecode, title, deptname, credits) VALUES ('PHY-402', 'Statistical Mechanics', 'Physics', 4);
-insert into course(coursecode, title, deptname, credits) VALUES ('STA-101', 'Statistical Methods', 'Finance', 3);
-insert into course(coursecode, title, deptname, credits) VALUES ('CS-102', 'Introduction to Algorithm', 'Comp. Sci.', 3);
-insert into course(coursecode, title, deptname, credits) VALUES ('DAT-601', 'Fundamental to Data Science', 'Data Science', 4);
-insert into course(coursecode, title, deptname, credits) VALUES ('DAT-604', 'Machine Learning', 'Data Science', 4);
-insert into course(coursecode, title, deptname, credits) VALUES ('DAT-608', 'Big Data Technologies', 'Data Science', 4);
+INSERT INTO course(coursecode, title, deptname, credits) VALUES ('STA-101', 'Statistical Methods', 'Finance', 3);
+INSERT INTO course(coursecode, title, deptname, credits) VALUES ('CS-102', 'Introduction to Algorithm', 'Comp. Sci.', 3);
+INSERT INTO course(coursecode, title, deptname, credits) VALUES ('DAT-601', 'Fundamental to Data Science', 'Data Science', 4);
+INSERT INTO course(coursecode, title, deptname, credits) VALUES ('DAT-604', 'Machine Learning', 'Data Science', 4);
+INSERT INTO course(coursecode, title, deptname, credits) VALUES ('DAT-608', 'Big Data Technologies', 'Data Science', 4);
+INSERT INTO course(coursecode, title, deptname, credits) VALUES ('DAT-613', 'Programming for Data Science', 'Data Science', 4);
+INSERT INTO course(coursecode, title, deptname, credits) VALUES ('DAT-620', 'Blockchain, Web and Mobile Technologies', 'Data Science', 4);
 
-
+-- Adding prerequisites for courses
 INSERT INTO prerequisites(coursecode, preqid) VALUES ('FIN-201','STA-101');
 INSERT INTO prerequisites(coursecode, preqid) VALUES ('PHY-402','PHY-101');
 INSERT INTO prerequisites(coursecode, preqid) VALUES ('BIO-301','BIO-101');
@@ -158,3 +160,6 @@ INSERT INTO prerequisites(coursecode, preqid) VALUES ('DAT-601', 'CS-101'), ('DA
 INSERT INTO prerequisites(coursecode, preqid) VALUES ('DAT-604', 'DAT-601'), ('DAT-601', 'CS-102');
 INSERT INTO prerequisites(coursecode, preqid) VALUES ('DAT-608', 'CS-347');
 INSERT INTO prerequisites(coursecode, preqid) VALUES ('MU-199','CS-101');
+INSERT INTO prerequisites(coursecode, preqid) VALUES ('DAT-613','CS-101');
+INSERT INTO prerequisites(coursecode, preqid) VALUES ('DAT-620','CS-101'), ('DAT-620','CS-102'), ('DAT-620','CS-347');
+
