@@ -37,3 +37,5 @@ DDL_for_universitydb.sql
 
 
  PHY-402: Statistical Mechanics
+
+ curl https://install.duckdb.org | sh
