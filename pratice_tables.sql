@@ -56,7 +56,7 @@ VALUES (
     ),
     (
         3,
-        'Michael Brown',
+        'Jade Kosoko',
         'm.brown@testmail.com',
         '789 Pine Rd, Chicago, IL'
     ),
@@ -159,3 +159,33 @@ VALUES (
     ),
     (7, 111, 1, 'Order arrived cold and messy.'),
     (8, 112, 4, 'Very tasty.');
+CREATE TABLE patient (
+    patient_id INT PRIMARY KEY,
+    name VARCHAR(60),
+    address text,
+    data_of_birth date
+);
+CREATE TABLE appointment(
+    patient_id INT,
+    appointment_id INT,
+    appointment_date date,
+    reason text,
+    PRIMARY KEY(patient_id, appointment_id),
+    FOREIGN KEY(patient_id) references patient(patient_id)
+);
+CREATE TABLE doctor (
+    doctor_id INT PRIMARY KEY,
+    name VARCHAR(60),
+    speciality VARCHAR(30) NOT NULL
+);
+CREATE TABLE consultation (
+    patient_id INT,
+    doctor_id INT,
+    consultation_date date NOT NULL,
+    PRIMARY KEY(patient_id, doctor_id),
+    FOREIGN KEY(patient_id) references patient(patient_id),
+    FOREIGN KEY(doctor_id) references doctor(doctor_id)
+);
+INSERT INTO doctor VALUES (245, 'Jade Kosoko', 'Sugeon'),
+    (45, 'Ladi', 'General Doctor'),
+    (23, 'Dipo', 'Dentist');
