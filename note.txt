@@ -39,3 +39,9 @@ DDL_for_universitydb.sql
  PHY-402: Statistical Mechanics
 
  curl https://install.duckdb.org | sh
+
+ “Find the
+ names of all instructors who earn more than the lowest paid instructor in the Biology
+ department.”
+
+ 

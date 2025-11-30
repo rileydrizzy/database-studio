@@ -189,3 +189,7 @@ CREATE TABLE consultation (
 INSERT INTO doctor VALUES (245, 'Jade Kosoko', 'Sugeon'),
     (45, 'Ladi', 'General Doctor'),
     (23, 'Dipo', 'Dentist');
+
+
+
+ 
